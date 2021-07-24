@@ -1,0 +1,39 @@
+package com.company;
+
+import com.sun.jdi.Value;
+
+import java.security.spec.RSAOtherPrimeInfo;
+import java.util.*;
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Main obj=new Main();
+        obj.sum();
+    }
+    public void sum()
+    {
+        try
+        {
+            div();
+        }
+        catch (ArithmeticException a)
+        {
+            System.out.println("Sorry cannot divide by zero");
+        }
+    }
+    public void div() throws ArithmeticException
+    {
+        int a=10/0;
+    }
+
+
+}
+
+
+
+
+
+
+
